@@ -1,0 +1,1 @@
+import{b as a,a as n,o as c}from"./app-Du4UQDmJ.js";/* empty css            */const d=(t,o)=>{const e=t.__vccOpts||t;for(const[s,r]of o)e[s]=r;return e},p={name:"ForgottPass"};function _(t,o,e,s,r,l){return c(),a("div",null,[...o[0]||(o[0]=[n("h1",null,"Forgot Password Page",-1)])])}const i=d(p,[["render",_],["__scopeId","data-v-94d7451d"]]);export{i as default};
