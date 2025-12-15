@@ -323,7 +323,7 @@ function submit() {
   formData.append('category', form.category);
   if (form.image) formData.append('image', form.image);
 
-  router.post('admin/blogs', formData, {
+ router.post('/admin/blogs', formData, {
     preserveScroll: true,
     onSuccess: () => {
       submitting.value = false;
@@ -374,7 +374,8 @@ function updateBlog() {
   // VERY IMPORTANT → ensures Laravel treats this as PUT!
   formData.append("_method", "put");
 
-  router.post(`/admin/blogs/${editingId.value}`, formData, {
+ router.post(`/admin/blogs/${editingId.value}`, formData, {
+
     forceFormData: true,
     onSuccess: () => {
       submitting.value = false;
@@ -414,7 +415,8 @@ function openDeleteModal(id) {
 function deleteBlog() {
   deleting.value = true;
 
-  router.delete(`/admin/blogs/${deletingId.value}`, {
+ router.delete(`/admin/blogs/${deletingId.value}`, {
+
     onSuccess: () => {
       deleting.value = false;
       showDeleteModal.value = false;

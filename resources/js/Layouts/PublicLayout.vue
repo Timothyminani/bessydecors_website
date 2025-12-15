@@ -171,7 +171,7 @@
 <!-- HAMBURGER BUTTON (Mobile only) -->
 <button
   @click="mobileMenuOpen = !mobileMenuOpen"
-  class="md:hidden text-4xl text-black"
+  class="md:hidden text-2xl text-black"
 >
   <span v-if="!mobileMenuOpen" >☰</span>
   <span v-else>✕</span>

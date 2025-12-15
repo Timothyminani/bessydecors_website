@@ -127,12 +127,18 @@ public function store(Request $request)
         'images.*' => 'image|mimes:jpg,jpeg,png,gif|max:10240', // 10240 KB = 10 MB,
     ]);
 
-    $paths = [];
-    if ($request->hasFile('images')) {
-        foreach ($request->file('images') as $file) {
-            $paths[] = $file->store('products', 'public');
-        }
+   $paths = [];
+if ($request->hasFile('images')) {
+    foreach ($request->file('images') as $file) {
+        // Generate a unique filename
+        $filename = time() . '_' . $file->getClientOriginalName();
+        // Move file to public/storage/products
+        $file->move(public_path('storage/products'), $filename);
+        // Save relative path for database
+        $paths[] = 'products/' . $filename;
     }
+}
+
 
     Product::create([
         'name' => $request->name,

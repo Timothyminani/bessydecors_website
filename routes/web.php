@@ -13,7 +13,7 @@ use App\Http\Controllers\BlogController;
 |--------------------------------------------------------------------------
 */
 
-Route::get('/home', [ProductController::class, 'ShowHome']);
+Route::get('/', [ProductController::class, 'ShowHome']);
 Route::get('/about', fn () => Inertia::render('About'));
 Route::get('/contact', fn () => Inertia::render('Contact'));
 
@@ -88,6 +88,8 @@ Route::prefix('admin')
     Route::post('/blogs', [BlogController::class, 'store'])
         ->name('admin.blog.store');
 
-    Route::put('/blogs/{id}', [BlogController::class, 'update']);
-    Route::delete('/blogs/{id}', [BlogController::class, 'destroy']);
+    Route::put('/blogs/{id}', [BlogController::class, 'update'])
+      ->name('admin.blog.update');
+    Route::delete('/blogs/{id}', [BlogController::class, 'destroy'])
+      ->name('admin.blog.destroy');
 });

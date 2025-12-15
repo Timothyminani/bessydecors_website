@@ -76,7 +76,8 @@
                 class="hover:bg-gray-50"
               >
                 <td class="px-4 py-2">
-                 <img :src="`/storage/${product.image_1}`" alt="" class="w-14 h-14 object-cover rounded" />
+                <img :src="`/storage/${product.image_1}`" alt="" class="w-14 h-14 object-cover rounded" />
+
 
                 </td>
                 <td class="px-4 py-2 whitespace-nowrap">{{ product.name }}</td>
