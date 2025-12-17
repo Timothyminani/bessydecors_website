@@ -25,7 +25,7 @@
 >
 
     <ul class="flex md:flex-row flex-col gap-8 text-lg font-medium md:bg-transparent md:w-auto">
-          <li><Link href="/home" class="py-6 px-3 hover:text-[#D4AF37] hover:border-b-2 hover:border-[#D4AF37] ">Home</Link></li>
+          <li><Link href="/" class="py-6 px-3 hover:text-[#D4AF37] hover:border-b-2 hover:border-[#D4AF37] ">Home</Link></li>
           
          <li class="relative">
 
