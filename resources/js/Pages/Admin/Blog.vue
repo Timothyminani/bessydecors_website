@@ -67,7 +67,7 @@
         </td>
 
         <!-- Actions -->
-        <td class="flex px-4 py-2">
+        <td class="flex flex-row px-4 py-2">
          <button  class="text-white mr-2 py-1 px-3 rounded bg-blue-600"  @click="openEditModal(blog)">Edit</button>
           <button class="text-white rounded py-1 px-3 bg-red-600"   @click="openDeleteModal(blog.id)">Delete</button>
         </td>
@@ -323,7 +323,7 @@ function submit() {
   formData.append('category', form.category);
   if (form.image) formData.append('image', form.image);
 
-  router.post('admin/blogs', formData, {
+  router.post('/admin/blogs', formData, {
     preserveScroll: true,
     onSuccess: () => {
       submitting.value = false;

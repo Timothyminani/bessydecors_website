@@ -13,7 +13,7 @@ use App\Http\Controllers\BlogController;
 |--------------------------------------------------------------------------
 */
 
-Route::get('/home', [ProductController::class, 'ShowHome']);
+Route::get('/', [ProductController::class, 'ShowHome']);
 Route::get('/about', fn () => Inertia::render('About'));
 Route::get('/contact', fn () => Inertia::render('Contact'));
 
