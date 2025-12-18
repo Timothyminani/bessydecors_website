@@ -103,7 +103,7 @@
         v-model="search"
         type="text"
         placeholder="Search products..."
-        class="px-3 py-2 border border-[#D4AF37] rounded-lg focus:outline-none focus:ring w-full md:w-64"
+        class="px-3 py-1 md:py-2 border border-[#D4AF37] rounded-lg focus:outline-none focus:ring w-full md:w-64"
     />
 
     <button
@@ -131,7 +131,7 @@
 
         <!-- COUNTER -->
         <span class="absolute -top-2 -right-2 bg-[#D4AF37] text-white text-xs rounded-full px-2 py-0.5">
-          0
+          10
         </span>
       </div>
 

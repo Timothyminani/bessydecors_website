@@ -6,7 +6,7 @@
 
     <!-- Heading -->
     <div class="max-w-3xl mx-auto text-center mb-16">
-      <h1 class="text-4xl font-bold mb-4">About Bessy Decors</h1>
+      <h1 class="text-4xl font-bold mb-4 text-yellow-600">About Bessy Decors</h1>
       <p class="text-lg text-gray-600">
         Crafting furniture that enhances your everyday living and brings comfort to every corner of your home.
       </p>
