@@ -1,59 +1,95 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+🛒 Bessy Decors – Furniture E-Commerce Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+A modern full-stack e-commerce web application developed for Bessy Decors, a furniture business. The platform allows customers to browse furniture products, view details, and interact with a clean, responsive shopping interface.
 
-## About Laravel
+This project demonstrates full-stack development using Laravel, Inertia.js, Vue.js, and Tailwind CSS.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+🌍 Live Demo
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+🔗 https://bessydecors.com/
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+This project is deployed and accessible online.
 
-## Learning Laravel
+🚀 Features
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Product listing and display system
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Product detail pages
 
-## Laravel Sponsors
+Admin product management
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Image upload and storage handling
 
-### Premium Partners
+Featured products section
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Responsive modern UI
 
-## Contributing
+Server-driven frontend using Inertia.js
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Smooth single-page app experience without building a separate API
 
-## Code of Conduct
+🛠 Technologies Used
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Backend
 
-## Security Vulnerabilities
+Laravel (PHP Framework)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+MySQL
 
-## License
+Frontend
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Vue.js
+
+Inertia.js
+
+Tailwind CSS
+
+JavaScript
+
+Other Tools
+
+Laravel File Storage
+
+Git & GitHub
+
+🧠 System Architecture
+
+This application uses Laravel + Inertia.js, which allows Vue.js to work directly with Laravel routes without creating a separate REST API.
+
+Laravel handles routing, business logic, and database operations
+
+Inertia.js acts as a bridge between Laravel and Vue
+
+Vue.js renders dynamic frontend components
+
+Tailwind CSS provides modern responsive styling
+
+This approach delivers a single-page application (SPA) experience while keeping backend and frontend in one project.
+
+⚙ Installation Guide git clone https://github.com/YOUR-USERNAME/bessydecors.git cd bessydecors
+
+composer install cp .env.example .env php artisan key:generate
+
+npm install npm run dev
+
+php artisan migrate php artisan serve
+
+👨‍💻 My Role
+
+I developed both the backend and frontend of the system, including:
+
+Designing database structure
+
+Building Laravel controllers and logic
+
+Integrating Inertia.js with Vue components
+
+Developing product display pages
+
+Handling image uploads and storage
+
+Creating responsive UI using Tailwind CSS
+
+🎯 Purpose
+
+The goal of this system was to create a modern online platform where customers can explore and view furniture products while providing the business with a simple product management system.
